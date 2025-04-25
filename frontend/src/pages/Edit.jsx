@@ -22,7 +22,7 @@ const EditMovie = () => {
         { withCredentials: true }
       );
       console.log(res);
-      const movie = res.data.allmovies[0];
+      const movie = res.data;
       setImage(movie.image);
 
       setTitle(movie.title);
