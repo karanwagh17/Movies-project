@@ -111,9 +111,7 @@ const getOneMovie = async(req,res) =>{
   try {
     const movie = await movieModel.findOne({ _id: movieId });
 
-    if (!note) {
-      return res.status(404).json({ message: "movie not found" });
-    }
+
 
     console.log("movie found:", movie);
     res.status(200).json(movie);
