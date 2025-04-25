@@ -22,7 +22,7 @@ moviesRouter.patch(
   Auth,
   updateMoviesByUser
 );
-moviesRouter.get("/getOneMovie/:userId/:movieId", Auth, getMovies);
+moviesRouter.get("/getOneMovie/:userId/:movieId", Auth, getOneMovie);
 
 moviesRouter.get("/getallMoviesAdmin", Auth, checkAdmin, getallMoviesAdmin);
 
